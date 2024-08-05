@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Page 4</title>
+    <link rel="stylesheet" href="stylles.css">
+</head>
+<body>
+    <h1>Wearable Health Monitoring Device Survey</h1>
+    <form action="page5.html" method="get">
+        <fieldset>
+            <legend>Section 4: Preferences and Features</legend>
+            <label>How important are the following features in a health monitoring device? (Rate on a scale of 1-5)</label><br>
+            <label for="accuracy">Accuracy of measurements (1-5):</label>
+            <input type="number" id="accuracy" name="accuracy" min="1" max="5"><br>
+            <label for="battery">Battery life (1-5):</label>
+            <input type="number" id="battery" name="battery" min="1" max="5"><br>
+            <label for="comfort">Comfort and design (1-5):</label>
+            <input type="number" id="comfort" name="comfort" min="1" max="5"><br>
+            <label for="ease">Ease of use (1-5):</label>
+            <input type="number" id="ease" name="ease" min="1" max="5"><br>
+            <label for="integration">Integration with mobile apps (1-5):</label>
+            <input type="number" id="integration" name="integration" min="1" max="5"><br>
+            <label for="privacy">Data privacy and security (1-5):</label>
+            <input type="number" id="privacy" name="privacy" min="1" max="5"><br><br>
+            
+            <label for="price">What is your preferred price range for a wearable health monitoring device?</label><br>
+            <select id="price" name="price">
+                <option value="Below GHS 200">Below GHS 200</option>
+                <option value="GHS 200 - GHS 400">GHS 200 - GHS 400</option>
+                <option value="GHS 400 - GHS 600">GHS 400 - GHS 600</option>
+                <option value="Above GHS 600">Above GHS 600</option>
+            </select><br><br>
+        </fieldset>
+        <button type="submit">Next</button>
+    </form>
+    
+   
+</body>
+</html>

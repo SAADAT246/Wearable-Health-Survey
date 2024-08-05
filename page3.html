@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Page 3</title>
+    <link rel="stylesheet" href="stylles.css">
+</head>
+<body>
+    <h1>Wearable Health Monitoring Device Survey</h1>
+    <form action="page4.html" method="get">
+        <fieldset>
+            <legend>Section 3: Health Monitoring Needs</legend>
+            <label>Which health metrics are most important for you to monitor? (Select all that apply)</label><br>
+            <input type="checkbox" id="heart-rate" name="metrics" value="Heart rate">
+            <label for="heart-rate">Heart rate</label><br>
+            <input type="checkbox" id="spO2" name="metrics" value="SpO2 (oxygen saturation)">
+            <label for="spO2">SpO2 (oxygen saturation)</label><br>
+            <input type="checkbox" id="temperature" name="metrics" value="Body temperature">
+            <label for="temperature">Body temperature</label><br>
+            <input type="checkbox" id="sleep" name="metrics" value="Sleep patterns">
+            <label for="sleep">Sleep patterns</label><br>
+            <input type="checkbox" id="activity" name="metrics" value="Activity levels (steps, distance)">
+            <label for="activity">Activity levels (steps, distance)</label><br>
+            <input type="checkbox" id="others" name="metrics" value="Others">
+            <label for="others">Others (please specify)</label><br>
+            <input type="text" id="others-specify" name="others-specify"><br><br>
+            
+            <label for="challenges">What challenges do you face with your current health monitoring solutions?</label><br>
+            <textarea id="challenges" name="challenges"></textarea><br><br>
+        </fieldset>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - Page 5</title>
+    <link rel="stylesheet" href="stylles.css">
+</head>
+<body>
+    <h1>Wearable Health Monitoring Device Survey</h1>
+    <form action="https://formspree.io/f/mnnadypl" method="post">
+        <fieldset>
+            <legend>Section 5: Summary and Final Comments</legend>
+            <p>Thank you for completing the survey. Please review your responses below:</p>
+            <ul>
+                <li><strong>Age Group:</strong> <span id="summary-age"></span></li>
+                <li><strong>Gender:</strong> <span id="summary-gender"></span></li>
+                <li><strong>Occupation:</strong> <span id="summary-occupation"></span></li>
+                <li><strong>Activity Level:</strong> <span id="summary-activity"></span></li>
+                <li><strong>Current Device:</strong> <span id="summary-current-device"></span></li>
+                <li><strong>Devices Used:</strong> <span id="summary-devices"></span></li>
+                <li><strong>Health Metrics:</strong> <span id="summary-metrics"></span></li>
+                <li><strong>Challenges:</strong> <span id="summary-challenges"></span></li>
+                <li><strong>Feature Ratings:</strong> <span id="summary-ratings"></span></li>
+                <li><strong>Preferred Price Range:</strong> <span id="summary-price"></span></li>
+            </ul>
+            <label for="comments">Any additional comments or suggestions?</label><br>
+            <textarea id="comments" name="comments"></textarea><br><br>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById('name').value = urlParams.get('name');
+            document.getElementById('email').value = urlParams.get('email');
+            document.getElementById('age').value = urlParams.get('age');
+            document.getElementById('gender').value = urlParams.get('gender');
+        });
+    </script>
+</body>
+</html>
